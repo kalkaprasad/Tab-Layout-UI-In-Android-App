@@ -54,16 +54,16 @@ public class chatfragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         infodetails=new ArrayList<>(); // this is the Array list
-        infodetails.add(new chat_info("kalka prasad","How are your ","02:05 Pm",R.drawable.img2));
-        infodetails.add(new chat_info("Abhjit tripathi","Hello baba ","02:05 Pm",R.drawable.img3));
-        infodetails.add(new chat_info("Preeti sahu","hello kp .. ","08:05 Pm",R.drawable.img4));
-        infodetails.add(new chat_info("Ramesh patel","kaisab baro ","07:05 Pm",R.drawable.img5));
-        infodetails.add(new chat_info("dependra singh","kaisai ho kp  ","03:05 Pm",R.drawable.img8));
+        infodetails.add(new chat_info("kalka prasad","How are your ?","02:05 Pm",R.drawable.img2));
+        infodetails.add(new chat_info("Abhjit tripathi","Hello ","02:05 Pm",R.drawable.img3));
+        infodetails.add(new chat_info("kalka prasad","How are your ? ","08:05 Pm",R.drawable.img4));
+        infodetails.add(new chat_info("kalka prasad","How are your ? ","07:05 Pm",R.drawable.img5));
+        infodetails.add(new chat_info("kalka prasad","How are your ? ","03:05 Pm",R.drawable.img8));
         infodetails.add(new chat_info("rohan singh","please contact to me  ","10:05 Pm",R.drawable.call2));
         infodetails.add(new chat_info("Saleem khan","Are you going college ?  ","10:05 Pm",R.drawable.call3));
         infodetails.add(new chat_info("Pradeep kumar","Where are you from  ","10:05 Pm",R.drawable.call1));
         infodetails.add(new chat_info("Rakesh sharma","Click on this link and contact to me  ","10:05 Pm",R.drawable.call3));
-        infodetails.add(new chat_info("kirti shukla","please pickup my call ","10:05 Pm",R.drawable.call2));
+        infodetails.add(new chat_info("kalka prasad","How are your ? ","10:05 Pm",R.drawable.call2));
 
 
 
