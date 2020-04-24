@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A6B3A8A8"
+    tools:context=".statusfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="16dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:paddingRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/plus">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="123dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:text="My status"
+                    android:textColor="#020202"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="188dp"
+                    android:layout_height="34dp"
+                    android:text="Tap to add status update"
+                    android:textColor="#020202"
+                    android:textSize="15dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent updates"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#3D3D3D">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recentststus_Recyview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Viewed updates"
+        android:textColor="#3D3D3D"
+        android:layout_marginTop="10dp"
+        ></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewed_status_Recyview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

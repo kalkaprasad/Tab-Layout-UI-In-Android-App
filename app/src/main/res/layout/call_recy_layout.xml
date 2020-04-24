@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!-- A CardView that contains a TextView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        app:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="#EBE7EB"
+        card_view:cardElevation="4dp"
+        card_view:cardMaxElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/call_profile_image"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/kalka"
+                app:civ_border_color="#F8F7F7"
+                app:civ_border_width="2dp" />
+
+            <!--! second Linear Layout holde the  name and the Message>
+
+                <-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/call_username"
+                    android:layout_width="150dp"
+                    android:layout_height="34dp"
+                    android:padding="5dp"
+                    android:text="Abhijit tripathi"
+                    android:textColor="#0A0A0A"
+                    android:textSize="15dp">
+
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/call_missed_Call"
+                            android:layout_width="20dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="2dp"
+                            android:src="@drawable/missedcall">
+
+
+                        </ImageView>
+                    <TextView
+                        android:id="@+id/call_Date"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:maxLength="30"
+                        android:paddingLeft="10dp"
+                        android:text="Today 06:55 Pm"
+                        android:textColor="#0A0A0A"
+                        android:textSize="15dp">
+
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/videoicon" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
